@@ -17,7 +17,6 @@ router.get("/fetchuser", (req, res) => {
                 message: "No Data To Fetch!!"
             })
         }
-
         res.send(result)
         if (error) {
             return res.redirect("/welcome")

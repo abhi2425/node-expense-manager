@@ -33,17 +33,26 @@ router.post("/signup", (req, res) => {
         })
     }
     const _id = (Math.random() * 10 ** 7).toFixed()
-    const sql = "Insert into credentials value(?,?,?,?,?)"
-    connection.query(sql, [firstname, lastname, email, password, _id], (error, result) => {
-
-        if (!result) {
+    const email_check = "Select email from credentials where email=?"
+    connection.query(email_check, [email], (error, result) => {
+        if (result[0]) {
             return res.render('signup', {
-                message: "Failed To SignUp!!"
+                message: "Email Already registered!! Plz Login!!"
             })
         }
-        res.redirect("/welcome")
-        if (error) {
-            return res.redirect('/signup')
-        }
+        const sql = "Insert into credentials value(?,?,?,?,?)"
+        connection.query(sql, [firstname, lastname, email, password, _id], (error, result) => {
+
+            if (!result) {
+                return res.render('signup', {
+                    message: "Failed To SignUp!!"
+                })
+            }
+            res.redirect("/welcome")
+            if (error) {
+                return res.redirect('/signup')
+            }
+        })
+        if (error) return res.redirect('/signup')
     })
 })

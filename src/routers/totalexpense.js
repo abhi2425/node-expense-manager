@@ -10,7 +10,7 @@ router.get('/totalexpense', (req, res) => {
     const sql = `Select _id,name, sum(itemprice)as sum from expense
                   group by name order by itemprice desc`
     connection.query(sql, (error, result) => {
-        if (!result) {
+        if (!result[0]) {
             return res.render("welcome", {
                 message: "No Data Found !!"
             })
