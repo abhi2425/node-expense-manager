@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="./css/insert.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv='cache-control' content='no-cache'>
+	<meta http-equiv='expires' content='0'>
+	<meta http-equiv='pragma' content='no-cache'>
+
+	<title>Expense Manager | Insert Data</title>
+</head>
+
+<body>
+	<div class="outerContainer">
+		<div class="container">
+			<h1 class="heading  style1">
+				HII !!!{{firstname}}</h1>
+			<h1 class="heading">INSERT YOUR EXPENSES!!!</h1>
+			<form action="insert" method="post" class="insert">
+				<div>
+					<label class="text" style="margin-right: 2.5rem;">First
+						Name:</label> <input class="input" type="text" name="firstname" required placeholder="FirstName"
+						minlength="3">
+				</div>
+				<nav>
+					<label class="text" style="margin-right: 2.5rem;">Item Name:</label>
+					<input class="input" type="text" name="itemname" required placeholder="Item Name" minlength="3"
+						pattern="[a-zA-Z]*">
+				</nav>
+
+				<div>
+					<label class="text">Item Price ($):</label> <input class="input" type="text" name="itemprice"
+						required pattern="[0-9.]*" placeholder="Item Price">
+				</div>
+				<h1 class="result">{{message}}</h1>
+				<button class="btn">Submit</button>
+			</form>
+		</div>
+
+	</div>
+</body>
+
+</html>

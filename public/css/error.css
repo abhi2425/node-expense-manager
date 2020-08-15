@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 100px;
+}
+
+@media (max-width:800px) {
+    body {
+        padding: 0;
+    }
+    .link {
+        padding: 5px;
+        font-size: 24px;
+    }
+}
+
+.heading {
+    color: beige;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.link,
+.link:visited {
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: none;
+    color: aqua;
+    padding: 20px;
+    background-color: cornsilk;
+    border-radius: 100px;
+}
+
+.link:hover {
+    background-color: cadetblue;
+    transform: scale(1.2);
+}

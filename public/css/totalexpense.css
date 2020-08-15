@@ -1,0 +1,114 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.outerContainer {
+    background-image: radial-gradient(circle, #faf600, #ff70ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.heading1 {
+    color: #d3009ec5;
+    font-size: 3.2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.total_users,
+.max_expense,
+.min_expense,
+.avg_expense {
+    color: beige;
+    font-size: 2.8rem;
+    text-transform: capitalize;
+}
+
+.heading1:hover {
+    transform: scale(1.08);
+}
+
+.style1 {
+    font-style: italic;
+    font-weight: 700;
+    color: #9400D3;
+    letter-spacing: 3px;
+}
+
+.table {
+    margin: 2rem;
+    padding: 1rem;
+    background-image: linear-gradient(to right top, #12e7eefd, #ff5e00);
+    border-radius: 30px;
+}
+
+th {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: beige;
+    padding: 2rem;
+    font-family: cursive;
+    text-align: center;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+td {
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: beige;
+    padding: 1.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    margin: 2rem;
+}
+
+@media screen and (max-width:550px) {
+    html {
+        font-size: 56.5%;
+    }
+    .heading1 {
+        font-size: 2.6rem;
+        letter-spacing: 1.5px;
+    }
+    th,
+    td,
+    tr {
+        padding: .5rem;
+        font-size: 2.5rem;
+    }
+    .table {
+        margin: 1.5rem;
+        padding: 3rem, 0;
+    }
+}

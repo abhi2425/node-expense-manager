@@ -1,0 +1,102 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.outerContainer {
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle, #DC143C, #00F5FF, #912CEE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.heading {
+    color: white;
+    font-size: 3.2rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.heading:hover {
+    transform: scale(1.2);
+}
+
+.container {
+    background-image: linear-gradient(to right bottom, #00B2EE, #FF00FF);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2rem 4rem #777777;
+}
+
+.text {
+    font-size: 2.5rem;
+    font-weight: 200;
+    font-family: sans-serif;
+    color: white;
+}
+
+.link,
+.link:visited {
+    color: #00F5FF;
+    font-size: 2.2rem;
+    align-self: center;
+}
+
+.link:hover {
+    color: #00FF00;
+    transform: scale(1.2);
+    transition: transform .8s ease-out;
+}
+
+.input {
+    margin: 1rem 1.5rem;
+    padding: 1rem 3rem;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+}
+
+.input:focus {
+    background-color: #eeeeee;
+    border: 1px solid cyan;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.btn {
+    padding: 1rem 4rem;
+    margin: 2rem;
+    align-self: center;
+    font-size: 2.5rem;
+    border-radius: 100px;
+    background-image: linear-gradient(to right bottom, #B23AEE, #00FF7F);
+    color: beige;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(to left top, #B23AEE, #00E5EE);
+}
+
+@media screen and (max-width:550px) {
+    html {
+        font-size: 56.5%;
+    }
+    .heading {
+        font-size: 2.6rem;
+        letter-spacing: 1.5px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/updateName.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <title>Expense Manager | Change Name</title>
+</head>
+
+<body>
+    <div class="outerContainer">
+
+        <div class="container">
+            <h1 class="heading style1">
+                HII!!!
+                {{firstname}}</h1>
+            <h1 class="heading">CHANGE YOUR NAME</h1>
+            <form action="UpdateName" method="post" class="name">
+                <div>
+                    <label class="text" style="margin-right: 1.2rem;">Old FirstName:</label>
+                    <input class="input" type="text" name="oldfirstname" required="required"
+                        placeholder="Old FirstName">
+                </div>
+
+                <div>
+                    <label class="text">New First Name:</label> <input class="input" type="text" name="newfirstname"
+                        required="required" pattern="[a-zA-Z]*" minlength="3" placeholder="New FirstName">
+                </div>
+
+                <nav>
+                    <label class="text">New Last Name:</label> <input class="input" type="text" name="newlastname"
+                        required="required" pattern="[a-zA-Z]*" minlength="3" placeholder="New LastName">
+                </nav>
+
+
+                <div>
+                    <label class="text" style="margin-right: 6.5rem;">Password:</label>
+                    <input class="input" id="input" type="password" name="password" required="required"
+                        placeholder="Password">
+                </div>
+                {{>error_message}}
+
+                <button class="btn">Change Name</button>
+            </form>
+        </div>
+
+        <div class="outcontainer">
+            <div class="logtext">
+                Please Logout After Changing The Name<br> And Again Login With
+                New Credentials....
+            </div>
+
+            <form action="logout" method="post" class="">
+                <input type="submit" value="Logout " class="btn">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="./css/login.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv='cache-control' content='no-cache'>
+	<meta http-equiv='expires' content='0'>
+	<meta http-equiv='pragma' content='no-cache'>
+
+	<title>Expense Manager| Login</title>
+</head>
+
+<body>
+	<div class="outerContainer">
+		<div class="container">
+			<h1 class="heading">EXPENSE MANAGER</h1>
+			<form action="login" method="post" class="login">
+				<div>
+					<label class="text">First Name</label>
+					<input type="text" name="firstname" placeholder="First Name" class="input" minlength="3"
+						pattern="[a-zA-z]*" required>
+				</div>
+				<nav>
+					<label class="text" style="margin-right: 5.8rem;">Email:</label> <input class="input" type="email"
+						name="email" required placeholder="Email">
+				</nav>
+
+				<div>
+					<label class="text" style="margin-right: 1.1rem;">Password:</label>
+					<input class="input" id="input" type="password" name="password" required placeholder="Password"
+						minlength="8">
+				</div>
+
+				{{>error_message}}
+				<input type="submit" value="Login" class="btn">
+			</form>
+
+			<a href="/signup" class="link">Not a user - Signup </a>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
