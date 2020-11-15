@@ -19,7 +19,7 @@ router.post("/login", (req, res) => {
     const sql = `select firstname,email,password from credentials
                    where firstname=? and email=? and password=?`
     connection.query(sql, [firstname, email, password], (error, result) => {
-        if (result[0] === undefined) {
+        if (result === undefined) {
             return res.render("login", {
                 message: "Invalid Credentials"
             })
