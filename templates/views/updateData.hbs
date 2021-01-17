@@ -2,54 +2,50 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="./css/updateData.css">
-	<meta charset="UtF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv='cache-control' content='no-cache'>
-	<meta http-equiv='expires' content='0'>
-	<meta http-equiv='pragma' content='no-cache'>
+	{{>head}}
 
+	<link rel="stylesheet" href="./css/updateData.css">
 	<title>Expense Manager | Data Update</title>
 </head>
 
 <body>
-<div class="outerContainer">
-<div class="container">
-		<h1 class="heading style1">
-			HII!!!
-			{{firstname}}</h1>
-		<h1 class="heading">UPDATE YOUR EXPENSES</h1>
-		<form action="updateData" method="post" class="signup">
-			<div>
-				<label class="text" style="margin-right: 4.9rem">First Name:</label>
-				<input class="input" type="text" name="firstname" required placeholder="FirstName">
-			</div>
+	<div class="outerContainer">
+		<div class="container">
+			<h1 class="heading style1">
+				HII!!!
+				{{firstname}}</h1>
+			<h1 class="heading">UPDATE YOUR EXPENSES</h1>
+			<form action="updateData" method="post" class="signup">
+				<div>
+					<label class="text" style="margin-right: 4.9rem">First Name:</label>
+					<input class="input" type="text" name="firstname" required placeholder="FirstName">
+				</div>
 
-			<div>
-				<label class="text " style="margin-right: 0.4rem">Old Item
-					Name:</label> <input class="input" type="text" name="olditemname" required placeholder="OldItemName"
-					minlength="3" pattern="[a-zA-Z]*">
-			</div>
+				<div>
+					<label class="text " style="margin-right: 0.4rem">Old Item
+						Name:</label> <input class="input" type="text" name="olditemname" required
+						placeholder="OldItemName" minlength="3" pattern="[a-zA-Z]*">
+				</div>
 
-			<nav>
-				<label class="text">New Item Name</label> <input class="input" type="text" name="newitemname" required
-					pattern="[a-zA-Z]*" minlength="3" placeholder="NewItemName">
-			</nav>
-			<div>
-				<label class="text" style="margin-right: 2.7rem">New
-					Price($):</label> <input class="input" type="text" name="newprice" required placeholder="New Price"
-					pattern="[0-9.]*">
-			</div>
+				<nav>
+					<label class="text">New Item Name</label> <input class="input" type="text" name="newitemname"
+						required pattern="[a-zA-Z]*" minlength="3" placeholder="NewItemName">
+				</nav>
+				<div>
+					<label class="text" style="margin-right: 2.7rem">New
+						Price($):</label> <input class="input" type="text" name="newprice" required
+						placeholder="New Price" pattern="[0-9.]*">
+				</div>
 
-			<div>
-				<label class="text" style="margin-right: 6rem">Password:</label> <input class="input" type="password"
-					name="password" id="input" required placeholder="Password">
-			</div>
-			{{>error_message}}
-			<button class="btn">Update Data</button>
-		</form>
+				<div>
+					<label class="text" style="margin-right: 6rem">Password:</label> <input class="input"
+						type="password" name="password" id="input" required placeholder="Password">
+				</div>
+				{{>error_message}}
+				<button class="btn">Update Data</button>
+			</form>
+		</div>
 	</div>
-</div>
 </body>
 
 </html>
