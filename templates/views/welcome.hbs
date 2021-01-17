@@ -2,36 +2,36 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="./css/welcome.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv='cache-control' content='no-cache'>
-    <meta http-equiv='expires' content='0'>
-    <meta http-equiv='pragma' content='no-cache'>
+  <link rel="stylesheet" href="./css/welcome.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
 
-    <title>Expense Manager | Welcome!!!</title>
+  <title>Expense Manager | Welcome!!!</title>
 </head>
 
 <body>
   <div class="outerContainer">
-<div class="container">
-        <h1 class="heading style1">
-            HII !!!
-            {{firstname}}
-        </h1>
-        <h1 class="heading">WELCOME IN EXPENSE MANAGER!!!</h1>
+    <div class="container">
+      <h1 class="heading style1">
+        HII !!!
+        {{firstname}}
+      </h1>
+      <h1 class="heading">WELCOME IN EXPENSE MANAGER!!!</h1>
 
-        <a href="/insert" class="link">Insert Data</a>
-        <a href="/update" class="link">Update Data</a>
-        <a href="fetchuser.html" class="link">Fetch User</a>
-        {{>error_message}}
-        <a href="totalexpense.html" class="link">Total Expense</a>
+      <a href="/insert" class="link">Insert Data</a>
+      <a href="/update" class="link">Update Data</a>
+      <a href="fetchuser.html" class="link">Fetch User</a>
+      {{>error_message}}
+      <a href="totalexpense.html" class="link">Total Expense</a>
     </div>
     <form action="logout" method="post" class="form">
-        <input type="submit" value="Logout " class="btn">
+      <input type="submit" value="Logout " class="btn">
     </form>
   </div>
-    
+
 </body>
 
 </html>

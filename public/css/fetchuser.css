@@ -1,89 +1,89 @@
- html {
-     font-size: 62.5%;
-     box-sizing: border-box;
- }
- 
- body {
-     margin: 0;
-     padding: 0;
- }
- 
- .outerContainer {
-     background-image: radial-gradient(circle, #00FA9A, #8470FF);
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     box-sizing: border-box;
-     height: 100vh;
- }
- 
- .heading1 {
-     color: #d300c8;
-     font-size: 3.2rem;
-     text-align: center;
-     letter-spacing: 2px;
-     text-transform: uppercase;
- }
- 
- .heading1:hover {
-     transform: scale(1.08);
- }
- 
- .style1 {
-     font-style: italic;
-     font-weight: 700;
-     color: #d3007b;
-     letter-spacing: 3px;
- }
- 
- .table {
-     margin: 2rem;
-     padding: 1rem;
-     background-image: linear-gradient(to right top, #129dee, #ff00ff);
-     border-radius: 40px;
- }
- 
- th {
-     font-size: 2.8rem;
-     font-weight: 600;
-     color: beige;
-     padding: 2rem;
-     font-family: cursive;
-     text-align: center;
-     letter-spacing: 2px;
- }
- 
- td {
-     font-size: 2.6rem;
-     font-weight: 400;
-     color: beige;
-     padding: 1.5rem;
-     text-align: center;
-     letter-spacing: 2px;
-     text-transform: capitalize;
-     font-family: sans-serif;
- }
- 
- .container1 {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
- }
- 
- @media screen and (max-width:550px) {
-     html {
-         font-size: 56.5%;
-     }
-     .heading1 {
-         font-size: 2.6rem;
-         letter-spacing: 1.5px;
-     }
-     th,
-     td,
-     tr {
-         padding: .5rem;
-         font-size: 2.5rem;
-     }
- }
+html {
+   font-size: 62.5%;
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.outerContainer {
+   background-image: radial-gradient(circle, #00fa9a, #8470ff);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   box-sizing: border-box;
+   height: 100vh;
+}
+
+.heading1 {
+   color: #d300c8;
+   font-size: 3.2rem;
+   text-align: center;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.heading1:hover {
+   transform: scale(1.08);
+}
+
+.style1 {
+   font-style: italic;
+   font-weight: 700;
+   color: #d3007b;
+   letter-spacing: 3px;
+}
+
+.table {
+   margin: 2rem;
+   padding: 1rem;
+   background-image: linear-gradient(to right top, #129dee, #ff00ff);
+   border-radius: 40px;
+}
+
+th {
+   font-size: 2.8rem;
+   font-weight: 600;
+   color: beige;
+   padding: 2rem;
+   font-family: cursive;
+   text-align: center;
+   letter-spacing: 2px;
+}
+
+td {
+   font-size: 2.6rem;
+   font-weight: 400;
+   color: beige;
+   padding: 1.5rem;
+   text-align: center;
+   letter-spacing: 2px;
+   text-transform: capitalize;
+   font-family: sans-serif;
+}
+
+.container1 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+   html {
+      font-size: 52.5%;
+   }
+   .heading1 {
+      font-size: 2.2rem;
+      letter-spacing: 1.2px;
+   }
+   th,
+   td,
+   tr {
+      padding: 0.5rem;
+      font-size: 2rem;
+   }
+}

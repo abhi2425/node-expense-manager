@@ -1,67 +1,68 @@
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+   font-size: 62.5%;
+   box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+   margin: 0;
+   padding: 0;
 }
 
 .outerContainer {
-    background-image: radial-gradient(circle, #FF3E96, #FF00FF, #7D26CD);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    height: 100vh;
+   background-image: radial-gradient(circle, #ff3e96, #ff00ff, #7d26cd);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-sizing: border-box;
+   height: 100vh;
 }
 
 .container {
-    background-image: linear-gradient(to right bottom, #1C86EE, #EE2C2C);
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2rem 4rem #777777;
-    margin-top: 4rem;
+   background-image: linear-gradient(to right bottom, #1c86ee, #ee2c2c);
+   padding: 3rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 2rem 4rem #777777;
+   margin-top: 4rem;
 }
 
 .link,
 .link:visited {
-    font-size: 2.8rem;
-    font-family: sans-serif;
-    font-weight: 300;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 2.5rem;
-    background-image: linear-gradient(to left bottom, #00FA9A, #FFD700);
-    padding: 1.5rem 3rem;
-    border-radius: 100px;
-    color: white;
+   font-size: 2.8rem;
+   font-family: sans-serif;
+   font-weight: 300;
+   text-decoration: none;
+   text-align: center;
+   text-transform: uppercase;
+   margin: 2.5rem;
+   background-image: linear-gradient(to left bottom, #00fa9a, #ffd700);
+   padding: 1.5rem 3rem;
+   border-radius: 100px;
+   color: white;
+   transition: all 0.4s ease;
 }
 
 .link:hover {
-    background-image: linear-gradient(to right top, #00FA9A, #FFD700);
-    transform: scale(1.2);
+   background-image: linear-gradient(to right top, #00fa9a, #ffd700);
+   transform: scale(1.2);
 }
 
 .heading {
-    color: white;
-    font-size: 3.2rem;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+   color: white;
+   font-size: 3.2rem;
+   text-align: center;
+   letter-spacing: 2px;
+   text-transform: uppercase;
 }
 
 .heading:hover {
-    transform: scale(1.08);
+   transform: scale(1.08);
 }
 
 .style1 {
-    font-style: italic;
-    font-weight: 700;
-    color: #00FA9A;
+   font-style: italic;
+   font-weight: 700;
+   color: #00fa9a;
 }

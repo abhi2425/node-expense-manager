@@ -1,134 +1,134 @@
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+   font-size: 62.5%;
+   box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+   margin: 0;
+   padding: 0;
 }
 
 .outerContainer {
-    background-image: radial-gradient(circle, dodgerblue, blue, #FF0000);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+   background-image: radial-gradient(circle, dodgerblue, blue, #ff0000);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
 }
 
 .heading {
-    color: white;
-    font-size: 3.2rem;
-    text-align: center;
-    letter-spacing: 2px;
+   color: white;
+   font-size: 3.2rem;
+   text-align: center;
+   letter-spacing: 2px;
 }
 
 .heading:hover {
-    transform: scale(1.2);
+   transform: scale(1.2);
 }
 
 .style1 {
-    text-transform: uppercase;
-    font-style: italic;
-    color: #00F5FF;
+   text-transform: uppercase;
+   font-style: italic;
+   color: #00f5ff;
 }
 
 .container {
-    background-image: linear-gradient(to right bottom, red, blue);
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 2rem 4rem #777777;
-    margin-top: 2rem;
+   background-image: linear-gradient(to right bottom, red, blue);
+   padding: 3rem;
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0 2rem 4rem #777777;
+   margin-top: 2rem;
 }
 
 .text {
-    font-size: 2.5rem;
-    font-weight: 200;
-    font-family: sans-serif;
-    color: white;
+   font-size: 2.5rem;
+   font-weight: 200;
+   font-family: sans-serif;
+   color: white;
 }
 
 .link,
 .link:visited {
-    color: #7D26CD;
-    font-size: 2.2rem;
-    align-self: center;
+   color: #7d26cd;
+   font-size: 2.2rem;
+   align-self: center;
 }
 
 .link:hover {
-    color: #00FF7F;
-    transform: scale(1.2);
-    transition: transform .8s ease-out;
+   color: #00ff7f;
+   transform: scale(1.2);
+   transition: transform 0.8s ease-out;
 }
 
 .input {
-    margin: 1rem 1.5rem;
-    padding: 1rem 3rem;
-    font-size: 2.2rem;
-    text-transform: capitalize;
+   margin: 1rem 1.5rem;
+   padding: 1rem 3rem;
+   font-size: 2.2rem;
 }
 
 .input:focus {
-    background-color: #eeeeee;
-    border: 1px solid cyan;
+   background-color: #eeeeee;
+   border: 1px solid cyan;
 }
 
 .name {
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
 }
 
 .btn {
-    padding: 1rem 4rem;
-    margin: 2rem;
-    align-self: center;
-    font-size: 2.5rem;
-    border-radius: 100px;
-    background-image: linear-gradient(to right bottom, red, #00688B);
-    color: beige;
-    cursor: pointer;
+   padding: 1rem 4rem;
+   margin: 2rem;
+   align-self: center;
+   font-size: 2.5rem;
+   border-radius: 100px;
+   background-image: linear-gradient(to right bottom, red, #00688b);
+   color: beige;
+   cursor: pointer;
+   transition: all 0.4s ease;
 }
 
 .btn:hover {
-    transform: scale(1.1);
-    background-image: linear-gradient(to left top, red, #00688B);
+   transform: scale(1.1);
+   background-image: linear-gradient(to left top, red, #00688b);
 }
 
 .outcontainer {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(blue, red);
-    padding: 2rem;
-    margin: 2rem;
-    justify-content: space-between;
-    align-items: center;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   background-image: linear-gradient(blue, red);
+   padding: 2rem;
+   margin: 2rem;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .logtext {
-    font-size: 2.5rem;
-    color: beige;
-    text-transform: capitalize;
-    text-align: center;
-    font-style: italic;
-    font-family: sans-serif;
-    font-weight: 400;
-    letter-spacing: 1px;
-    display: block;
+   font-size: 2.5rem;
+   color: beige;
+   text-transform: capitalize;
+   text-align: center;
+   font-style: italic;
+   font-family: sans-serif;
+   font-weight: 400;
+   letter-spacing: 1px;
+   display: block;
 }
 
-@media screen and (max-width:550px) {
-    html {
-        font-size: 56.5%;
-    }
-    .heading {
-        font-size: 2.6rem;
-        letter-spacing: 1.5px;
-    }
-    .outerContainer {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
+@media screen and (max-width: 550px) {
+   html {
+      font-size: 56.5%;
+   }
+   .heading {
+      font-size: 2.6rem;
+      letter-spacing: 1.5px;
+   }
+   .outerContainer {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+   }
 }
