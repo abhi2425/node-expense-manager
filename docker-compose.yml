@@ -1,0 +1,38 @@
+version: '3.9'
+name: expense-manager
+
+services:
+  server:
+    container_name: expenense-manger-server
+    ports:
+      - 3000:3000
+    build: .
+    image: abhi2425/expense-manager:init
+    networks:
+      - backend 
+    depends_on:
+      - db  
+
+  db:
+    container_name: expense-db
+    ports:
+      - 3306
+    env_file: .env
+    environment:
+      HOST: ${HOST}
+      USER: ${USER}
+      PASSWORD: ${PASSWORD}
+      DATABASE: ${DATABASE}
+    image: mysql:8.0
+    networks:
+      - backend
+    volumes:
+      - sql-data:/var/lib/mysql
+
+networks:
+  backend:
+
+volumes:
+  sql-data:  
+
+
